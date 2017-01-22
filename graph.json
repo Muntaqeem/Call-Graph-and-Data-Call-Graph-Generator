@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "caption": "a"
+        },
+        {
+            "id": 2,
+            "caption": "b"
+        },        
+        {
+            "id": 3,
+            "caption": "c"
+        },
+        {
+            "id": 4,
+            "caption": "d"
+        }
+    ],
+    "edges": [
+        {
+            "source": 1,
+            "target": 2,
+            "type": "call"
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "type": "read"
+        },
+        {
+            "source": 3,
+            "target": 4,
+            "type": "call"
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "type": "call"
+        }
+    ]
+}

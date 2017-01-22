@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.4.2/alchemy.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.4.2/vendor.css"/>
+</head>
+<body>
+  <div class="alchemy" id="alchemy"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.4.2/scripts/vendor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.4.2/alchemy.min.js"></script>
+  
+  <script type="text/javascript">
+      var config = {
+            dataSource: 'dcg.json',
+            directedEdges: true,
+            edgeTypes: {"edgeType":["CALL", "READ", "WRITE"]}, 
+            nodeTypes: {"nodeType":["Function", "Variable"]},
+            nodeCaption: "caption",
+            edgeCaption: "edgeType",
+            nodeStyle: {
+              "Function": {
+                "color"      : "rgb(255,255,0)",
+                "radius"     : 20,
+                "borderWidth": 8
+              },
+              "Variable":{
+                "color"      : "rgb(55,255,152)",
+                "radius"     : 10,
+              }
+            },
+            edgeStyle: {
+              "CALL": {
+                "width": 15,
+                "color": "rgba(255,255,255,0.4)"
+              },
+              "READ": {
+                "width": 10,
+                "color": "rgb(0,255,0)"
+              },
+              "WRITE": {
+                "width": 5,
+                "color": "rgb(255,0,0)"
+              }
+            },
+            showControlDash: true,
+
+            showStats: true,
+            nodeStats: true,
+            edgeFilters: true,
+            showFilters: true,
+            nodeFilters: true,
+
+            captionToggle: true,
+            edgesToggle: true,
+            nodesToggle: true,
+            zoomControls: true           
+        };
+
+    alchemy.begin(config)
+
+  </script>
+</body>
+</html>

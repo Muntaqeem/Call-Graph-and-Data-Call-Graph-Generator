@@ -1,0 +1,73 @@
+{
+"nodes" : [
+{
+"id":0,"nodeType":"Function","caption": "function1"
+},
+{
+"id":1,"nodeType":"Function","caption": "function2"
+},
+{
+"id":2,"nodeType":"Function","caption": "function3"
+},
+{
+"id":3,"nodeType":"Function","caption": "main"
+},
+{
+"id":4,"nodeType":"Variable","caption": "b"
+},
+{
+"id":5,"nodeType":"Variable","caption": "c"
+},
+{
+"id":6,"nodeType":"Variable","caption": "lines"
+},
+{
+"id":7,"nodeType":"Variable","caption": "a"
+},
+{
+"id":8,"nodeType":"Variable","caption": "f"
+},
+{
+"id":9,"nodeType":"Variable","caption": "hgj"
+},
+{
+"id":10,"nodeType":"Variable","caption": "no1"
+}
+],
+"edges" : [
+{
+"source":1,"target": 0,"edgeType": "CALL"
+},
+{
+"source":1,"target": 2,"edgeType": "CALL"
+},
+{
+"source":2,"target": 1,"edgeType": "CALL"
+},
+{
+"source":3,"target": 2,"edgeType": "CALL"
+},
+{
+"source":3,"target": 1,"edgeType": "CALL"
+},
+{
+"source":2,"target": 4,"edgeType": "READ"
+},
+{
+"source":3,"target": 4,"edgeType": "READ"
+},
+{
+"source":3,"target": 5,"edgeType": "READ"
+},
+{
+"source":1,"target": 4,"edgeType": "WRITE"},
+{
+"source":3,"target": 4,"edgeType": "WRITE"},
+{
+"source":2,"target": 6,"edgeType": "WRITE"},
+{
+"source":3,"target": 7,"edgeType": "WRITE"},
+{
+"source": 3,"target": 1,"edgeType": "CALL"
+}]
+}
